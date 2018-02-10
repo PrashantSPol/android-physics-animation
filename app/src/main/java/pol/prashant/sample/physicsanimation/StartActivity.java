@@ -13,6 +13,7 @@ import android.widget.Button;
 public class StartActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnBackToMyPosition;
     Button btnEnlargeAsGoDown;
+    Button btnSelectableImageDmeo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,6 +25,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
         btnEnlargeAsGoDown = (Button) findViewById(R.id.btn_enlarge_as_go_down);
         btnEnlargeAsGoDown.setOnClickListener(this);
+
+        btnSelectableImageDmeo = (Button) findViewById(R.id.btn_selectable_image_demo);
+        btnSelectableImageDmeo.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +39,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
             case R.id.btn_enlarge_as_go_down :
                 startActivity(EnlargeAsGoDownSpringAnimation.newInstance(this));
                 break;
+
+            case R.id.btn_selectable_image_demo:
+                startActivity(SelectableImageDemo.newInstance(this));
         }
     }
 }
