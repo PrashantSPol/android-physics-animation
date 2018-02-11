@@ -3,4 +3,5 @@
     <string name="str_back_to_my_position">Back To My Position Spring Animation</string>
     <string name="str_enlarge_as_go_down">Enlarge As Go Down Spring Animation</string>
     <string name="str_selectable_image_demo">Selectable Image Demo</string>
+    <string name="str_follow_me_animation">Follow Me Chain Animation</string>
 </resources>

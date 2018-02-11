@@ -13,6 +13,7 @@ import android.widget.Button;
 public class StartActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnBackToMyPosition;
     Button btnEnlargeAsGoDown;
+    Button btnFollowMeAnimation;
     Button btnSelectableImageDmeo;
 
     @Override
@@ -26,6 +27,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         btnEnlargeAsGoDown = (Button) findViewById(R.id.btn_enlarge_as_go_down);
         btnEnlargeAsGoDown.setOnClickListener(this);
 
+        btnFollowMeAnimation = (Button) findViewById(R.id.btn_follow_me);
+        btnFollowMeAnimation.setOnClickListener(this);
+
         btnSelectableImageDmeo = (Button) findViewById(R.id.btn_selectable_image_demo);
         btnSelectableImageDmeo.setOnClickListener(this);
     }
@@ -38,6 +42,10 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.btn_enlarge_as_go_down :
                 startActivity(EnlargeAsGoDownSpringAnimation.newInstance(this));
+                break;
+
+            case R.id.btn_follow_me:
+                startActivity(FollowMeSpringAnimation.newInstance(this));
                 break;
 
             case R.id.btn_selectable_image_demo:
