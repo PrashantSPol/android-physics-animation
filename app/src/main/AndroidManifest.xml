@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BackToMyPositionSpringAnimationActivity"/>
-        <activity android:name=".EnlargeAsGoDownSpringAnimation"/>
-        <activity android:name=".SelectableImageDemo"/>
+        <activity android:name=".BackToMyPositionSpringAnimationActivity" android:label="@string/str_back_to_my_position"/>
+        <activity android:name=".EnlargeAsGoDownSpringAnimation" android:label="@string/str_enlarge_as_go_down"/>
+        <activity android:name=".SelectableImageDemo" android:label="@string/str_selectable_image_demo"/>
     </application>
 
 </manifest>
